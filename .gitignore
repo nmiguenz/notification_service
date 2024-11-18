@@ -1,0 +1,17 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar el archivo de configuración de variables de entorno
+.env
+
+# Ignorar logs y datos de depuración
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar configuraciones específicas del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar credenciales sensibles
+comandacen-1-firebase-adminsdk-esp9v-c124a99969.json
