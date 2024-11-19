@@ -110,11 +110,15 @@ app.post("/send-email", async (req, res) => {
       to: mail,
       subject: aceptacion
         ? "Felicitaciones su cuenta fue aceptada"
-        : "Disculpe pero hemos bloqueado su cuenta",
+        : "Cuenta rechazada",
       html: `
       <h1>${aceptacion ? "Felicitaciones " : "Disculpe "} ${nombreUsuario}</h1>
-      <p>Su cuenta fue ${aceptacion ? "aceptada" : "rechazada"}</p>
-      <p>Te estamos esperando</p>
+      <p>Su cuenta fue ${aceptacion ? "aceptada." : "rechazada."}</p>
+      <p>${
+        aceptacion
+          ? "Te estamos esperando!"
+          : "No te preocupes, puedes volver a probar en el futuro."
+      }</p>
       <p>Comanda CEN</p>
       `,
     });
