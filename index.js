@@ -8,7 +8,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 //ambos van al archivo de config de Firebase
-const serviceAccount = require(process.env.SERVICE_ACCOUNT);
+//const serviceAccount = require(process.env.SERVICE_ACCOUNT);
 const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
 
 const app = express();
